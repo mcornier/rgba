@@ -10,6 +10,4 @@ crate-type = ["cdylib", "rlib"]
 
 [dependencies]
 rgba-core = { workspace = true }
-rgba-arm = { workspace = true }
-rgba-ppu = { workspace = true }
-rgba-apu = { workspace = true }
+rgba-gba = { workspace = true }

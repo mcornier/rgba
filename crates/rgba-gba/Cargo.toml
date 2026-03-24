@@ -1,0 +1,15 @@
+[package]
+name = "rgba-gba"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "GBA emulator integration — ties all components together"
+
+[dependencies]
+rgba-core = { workspace = true }
+rgba-arm = { workspace = true }
+rgba-ppu = { workspace = true }
+rgba-apu = { workspace = true }
+serde = { workspace = true }
+serde_json = "1"
+log = { workspace = true }

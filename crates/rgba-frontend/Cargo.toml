@@ -7,8 +7,6 @@ description = "Native frontend for rgba GBA emulator"
 
 [dependencies]
 rgba-core = { workspace = true }
-rgba-arm = { workspace = true }
-rgba-ppu = { workspace = true }
-rgba-apu = { workspace = true }
+rgba-gba = { workspace = true }
 log = { workspace = true }
 env_logger = "0.11"

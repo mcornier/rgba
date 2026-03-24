@@ -5,6 +5,7 @@ members = [
     "crates/rgba-arm",
     "crates/rgba-ppu",
     "crates/rgba-apu",
+    "crates/rgba-gba",
     "crates/rgba-frontend",
     "crates/rgba-wasm",
 ]
@@ -21,6 +22,7 @@ rgba-core = { path = "crates/rgba-core" }
 rgba-arm = { path = "crates/rgba-arm" }
 rgba-ppu = { path = "crates/rgba-ppu" }
 rgba-apu = { path = "crates/rgba-apu" }
+rgba-gba = { path = "crates/rgba-gba" }
 serde = { version = "1", features = ["derive"] }
 bitflags = "2"
 log = "0.4"

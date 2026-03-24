@@ -1,3 +1,5 @@
+use serde::{Deserialize, Serialize};
+
 use crate::types::{AccessType, AccessWidth};
 
 /// Trait for components that can be accessed via the memory bus
@@ -36,6 +38,7 @@ pub trait BusAccess {
 }
 
 /// The main GBA memory bus that dispatches reads/writes to the correct region
+#[derive(Clone, Serialize, Deserialize)]
 pub struct Bus {
     pub bios: Vec<u8>,
     pub ewram: Vec<u8>,
