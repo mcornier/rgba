@@ -1,4 +1,5 @@
 pub mod arm;
+pub mod exec_arm;
 pub mod thumb;
 pub mod cpu;
 

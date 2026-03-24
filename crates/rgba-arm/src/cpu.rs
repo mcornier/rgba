@@ -148,10 +148,9 @@ impl Arm7Tdmi {
         self.halted = false;
     }
 
-    /// Execute an ARM instruction (stub — implemented in arm.rs)
-    fn execute_arm(&mut self, _instruction: u32, _bus: &mut impl BusAccess) -> u32 {
-        // TODO: Full ARM instruction execution (US-04)
-        1
+    /// Execute an ARM instruction
+    fn execute_arm(&mut self, instruction: u32, bus: &mut impl BusAccess) -> u32 {
+        self.execute_arm_instruction(instruction, bus)
     }
 
     /// Execute a THUMB instruction (stub — implemented in thumb.rs)
