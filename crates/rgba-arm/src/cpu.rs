@@ -153,10 +153,9 @@ impl Arm7Tdmi {
         self.execute_arm_instruction(instruction, bus)
     }
 
-    /// Execute a THUMB instruction (stub — implemented in thumb.rs)
-    fn execute_thumb(&mut self, _instruction: u32, _bus: &mut impl BusAccess) -> u32 {
-        // TODO: Full THUMB instruction execution (US-05)
-        1
+    /// Execute a THUMB instruction
+    fn execute_thumb(&mut self, instruction: u32, bus: &mut impl BusAccess) -> u32 {
+        self.execute_thumb_instruction(instruction, bus)
     }
 }
 

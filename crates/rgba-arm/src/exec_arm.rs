@@ -713,7 +713,7 @@ impl Arm7Tdmi {
 }
 
 /// Calculate multiply instruction cycle count based on Rs value
-fn multiply_cycles(rs: u32) -> u32 {
+pub fn multiply_cycles(rs: u32) -> u32 {
     if rs & 0xFFFF_FF00 == 0 || rs & 0xFFFF_FF00 == 0xFFFF_FF00 {
         1
     } else if rs & 0xFFFF_0000 == 0 || rs & 0xFFFF_0000 == 0xFFFF_0000 {
