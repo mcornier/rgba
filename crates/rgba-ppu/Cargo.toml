@@ -1,0 +1,12 @@
+[package]
+name = "rgba-ppu"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "GBA PPU (Picture Processing Unit) emulation"
+
+[dependencies]
+rgba-core = { workspace = true }
+serde = { workspace = true }
+bitflags = { workspace = true }
+log = { workspace = true }

@@ -1,0 +1,15 @@
+[package]
+name = "rgba-wasm"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "WebAssembly bindings for rgba GBA emulator"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+rgba-core = { workspace = true }
+rgba-arm = { workspace = true }
+rgba-ppu = { workspace = true }
+rgba-apu = { workspace = true }

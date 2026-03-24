@@ -1,0 +1,12 @@
+[package]
+name = "rgba-apu"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "GBA APU (Audio Processing Unit) emulation"
+
+[dependencies]
+rgba-core = { workspace = true }
+serde = { workspace = true }
+bitflags = { workspace = true }
+log = { workspace = true }
